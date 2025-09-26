@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEGA Messenger</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./styles/main-chats.css">
+   
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+        <button class="menu-toggle" id="menuToggle">
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="app-title">MEGA Messenger</div>
+    </div>
+    <!-- Бургер меню -->
+    <div class="burger-menu" id="burgerMenu">
+        <div class="burger-header">
+            <div class="user-info">
+                <div class="avatar"></div>
+                <div class="username">Your username</div>
+            </div>
+            <button class="burger-close" id="burgerClose">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        
+        <div class="burger-content">
+            <div class="burger-item">
+                <i class="fas fa-user"></i>
+                <span>My Profile</span>
+            </div>
+            <div class="burger-item">
+                <i class="fas fa-crown"></i>
+                <span>MEGA +</span>
+            </div>
+            
+            <div class="burger-divider"></div>
+            
+            <div class="burger-item">
+                <i class="fas fa-users"></i>
+                <span>Add group</span>
+            </div>
+            <div class="burger-item">
+                <i class="fas fa-address-book"></i>
+                <span>Contacts</span>
+            </div>
+            <div class="burger-item">
+                <i class="fas fa-phone"></i>
+                <span>Phone</span>
+            </div>
+            <div class="burger-item">
+                <i class="fas fa-cog"></i>
+                <span>Settings</span>
+            </div>
+            
+            <div class="burger-divider"></div>
+            
+            <div class="burger-item">
+                <i class="fas fa-user-plus"></i>
+                <span>Add Friend</span>
+            </div>
+            <div class="burger-item">
+                <i class="fas fa-shield-alt"></i>
+                <span>Verification</span>
+            </div>
+            <div class="burger-item">
+                <i class="fas fa-sign-out-alt"></i>
+                <span>EXIT</span>
+            </div>
+            <div class="burger-item">
+                <i class="fas fa-question-circle" ></i>
+                <span>Support</span>
+            </div>
+        </div>
+    </div>
+    <!-- Main Container -->
+    <div class="main-container">
+        <!-- Sidebar -->
+        <div class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <input type="text" class="search-box" placeholder="Search chats..." id="searchBox">
+            </div>
+            <div class="chat-list" id="chatList">
+                <!-- Chat list will be populated by JavaScript -->
+            </div>
+        </div>
+
+        <!-- Chat Area -->
+        <div class="chat-area" id="chatArea">
+            <div class="chat-header">
+                <button class="back-button" id="backButton">
+                    <i class="fas fa-arrow-left"></i>
+                </button>
+                <div class="chat-contact-info" id="chatContactInfo" style="display: none;">
+                    <div class="chat-contact-avatar" id="chatContactAvatar"></div>
+                    <div class="chat-contact-name" id="chatContactName"></div>
+                </div>
+            </div>
+
+            <!-- Empty State -->
+            <div class="empty-state" id="emptyState">
+                <i class="fas fa-comments"></i>
+                <h2>No chat selected</h2>
+                <p>Select a conversation from the list or start a new one</p>
+            </div>
+
+            <!-- Messages -->
+            <div class="chat-messages" id="chatMessages" style="display: none;"></div>
+
+            <!-- Input -->
+            <div class="chat-input-container" id="chatInput" style="display: none;">
+                <input type="text" class="message-input" placeholder="Type a message..." id="messageInput">
+                <button class="send-btn" id="sendBtn">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    
+  <script src="./scripts/main.js"></script>
+</body>
+</html>

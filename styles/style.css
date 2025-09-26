@@ -1,0 +1,174 @@
+ * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+@font-face{
+        font-family: 'main-logo'; 
+        src:url('/assets/fonts/nothing-font-5x7.otf') ; 
+}
+
+        body {
+            background-color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+    
+        .login-container {
+            background-color: #ffffff;
+            border-radius: 8px;
+            
+            width: 100%;
+            max-width:450px;
+            padding: 30px;
+        }
+
+        .logo {
+            text-align: center;
+            margin-bottom: 30px;
+            
+        }
+
+        .logo h1 {
+            font-size: 70px;
+            font-weight: 700;
+            font-family: 'main-logo';
+            color: #000000;
+            margin-bottom: 10px;
+        }
+
+        .logo p {
+            color: #666;
+            font-size: 16px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+    
+
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 5% 15%;
+            min-width: 280px;
+            min-height: 50px;
+            border: 2px solid #000000;
+            border-radius:30px;
+            font-size: 20px;
+            transition: border-color 0.3s;
+            margin-bottom: 10%;
+            font-family: 'main-logo'; 
+        }
+
+        input[type="text"]:hover,
+        input[type="password"]:hover {
+            border-color: #000000;
+        transform: scale(1.05);
+         border: 2px dashed #000000;
+           
+        }
+    
+        .login-btn {
+            background-color: #ffffff;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            font-family: 'main-logo'; 
+            width: 100%;
+            padding: 5% 15%;
+            min-width: 280px;
+            min-height: 50px;
+            border: 2px solid #000000;
+           
+            border-radius:40px;
+            font-size: 25px;
+          font-family: 1;
+            margin-bottom: 10%;
+        }
+
+        .login-btn:hover {
+            background-color: #000000;
+            color: #ffffff;
+            transform: scale(1.05);
+             
+        }
+
+        .login-btn:disabled {
+            background-color: #ffffff;
+            cursor: not-allowed;
+        }
+
+      .support{
+        display:flex ;
+        justify-content: center;
+        font-family: main-logo;
+        font-size: 25px;
+       
+      }
+      .support a{
+     text-decoration: none;
+     color: #000000;
+     font-family: main-logo;
+      }
+      
+
+        @media (max-width: 480px) {
+            .login-container {
+                padding: 20px;
+                
+            }
+            
+            .logo h1 {
+                font-size: 45px;
+                font-family: 'main-logo';
+                
+            }
+        }
+        @media (max-height: 375px){
+            .logo {
+            text-align: center;
+            margin-top: -14%;
+            font-family: 'main-logo';
+          overflow-y: none ;
+            
+        }
+        .logo h1 {
+                font-size: 45px;
+                font-family: 'main-logo';
+                  font-size: 35px;
+                  margin-top: 3%;
+            }
+        input[type="text"],
+        input[type="password"] {
+            align-items:center ;
+            width: 100%;
+            padding: 4% 10%;
+            min-width: 280px;
+            min-height: 50px;
+            border: 2px solid #000000;
+            border-radius:30px;
+            font-size: 18px;
+            transition: border-color 0.3s;
+            margin-bottom: 5%;
+           
+        }
+        .login-btn {
+        
+            font-family: 'main-logo'; 
+            width: 100%;
+            padding: 4% 14%;
+            min-width: 280px;
+            min-height: 50px;
+            border: 2px solid #000000;
+           
+            border-radius:40px;
+            font-size: 25px;
+          font-family: 1;
+            margin-bottom: 10%;
+        }
+        }

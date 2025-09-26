@@ -7,7 +7,7 @@
 
         @font-face {
             font-family: 'main-logo';
-            src: url('/assets/fonts/nothing-font-5x7.otf');
+             src:url(../assets/fonts/nothing-font-5x7.otf) ; 
         }
 
         body {
@@ -542,3 +542,4 @@
             z-index: 1500;
 
         }
+
